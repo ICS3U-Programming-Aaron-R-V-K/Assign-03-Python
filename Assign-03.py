@@ -15,7 +15,9 @@ def main():
 
     # Try catch statement to make sure the input from the user is a valid number
     try:
-        aqi_int = int(aqi_num)
+        # It converts the user input to a float, and then rounds the decimals to the nearest number converting it to a string 
+        aqi_float = float(aqi_num)
+        aqi_int = round(aqi_float)
 
         # Checks if the number is between 0 and 500 With an OR statement
         if aqi_int < 0 or aqi_int > 500:
