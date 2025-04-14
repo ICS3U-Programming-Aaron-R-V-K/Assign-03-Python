@@ -12,10 +12,9 @@ def main():
     # Get user input for their air quality as a string
     aqi_num = input("Enter the AQI number: ")
 
-
     # Try catch statement to make sure the input from the user is a valid number
     try:
-        # It converts the user input to a float, and then rounds the decimals to the nearest number converting it to a string 
+        # It converts the user input to a float, and then rounds the decimals to the nearest number converting it to a string
         aqi_float = float(aqi_num)
         aqi_int = round(aqi_float)
 
@@ -40,7 +39,9 @@ def main():
 
                         # Extra Nested if for an extra warning after 175 (AQI)
                         if aqi_int > 175:
-                            print("Warning!: Consider staying indoors due to high pollution.")
+                            print(
+                                "Warning!: Consider staying indoors due to high pollution."
+                            )
 
                     # Nested if statement if AQi is between (201-300)
                     else:
